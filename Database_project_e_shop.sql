@@ -27,6 +27,7 @@ DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `idOrders` int(11) NOT NULL,
   `User_idUser` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
   PRIMARY KEY (`idOrders`),
   KEY `fk_Orders_User1_idx` (`User_idUser`),
   CONSTRAINT `fk_Orders_User1` FOREIGN KEY (`User_idUser`) REFERENCES `user` (`idUser`) ON DELETE NO ACTION ON UPDATE NO ACTION
@@ -137,6 +138,7 @@ DROP TABLE IF EXISTS `shopping cart`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `shopping cart` (
   `idshopping cart` int(11) NOT NULL AUTO_INCREMENT,
+  `quantity` int(11) NOT NULL,
   PRIMARY KEY (`idshopping cart`),
   UNIQUE KEY `idshopping cart_UNIQUE` (`idshopping cart`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -214,4 +216,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-02 14:42:04
+-- Dump completed on 2019-07-02 16:04:25
