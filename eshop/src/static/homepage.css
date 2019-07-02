@@ -1,8 +1,8 @@
-
 #header{ 
 text-align:center;
 padding-bottom:2px;
 padding-top:3px;
+background-color: SteelBlue;
 }
 #image{align-items:center;
 justify-content:center;
@@ -28,3 +28,4 @@ margin: 1px, solid;
 float: right;
 width:20%
 }
+
