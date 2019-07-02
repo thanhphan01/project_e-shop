@@ -1,0 +1,21 @@
+body{
+	width: 600px;
+	
+}
+#block{
+	display:flex;
+
+}
+
+#itemlist {color:red;
+background-color: grey;
+	width:300px;
+	height:800px;
+	
+}
+#login{color:blue;
+	background-color:red;
+	width: 300px; 
+	height: 200px;
+	float: right;
+}
