@@ -1,18 +1,21 @@
 body{
 	width: 600px;
-	
 }
 #block{
 	display:flex;
-
 }
-th{ width: 20%; 
+#submit{
+	float:right;
 }
-
+th{ width: 25%; 
+}
+tr{ margin:1px;
+}
 #itemlist {color:red;
-background-color: grey;
-	width:600px;
+	background-color: grey;
+	width:1000px;
 	height:400px;
+	padding-top: 10px
 	
 }
 #login{color:blue;
