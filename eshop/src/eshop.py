@@ -1,11 +1,11 @@
 from flask import *
-#from flask.ext.mysqldb import MySQL
+from flask_mysqldb import MySQL
 app = Flask(__name__)
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
 # MySQL configurations
 #app.config[’MYSQL_USER’] = ’root’
-#app.config[’MYSQL_DB’] = ########################
+#app.config[’MYSQL_DB’] = Database_project_e_shop
 #app.config[’MYSQL_HOST’] = ’localhost’
 #mysql = MySQL(app)
 
@@ -16,10 +16,10 @@ def check_password(key,password):
 def login():
     message = ''
     if request.method == 'POST':
-        session['fname'] = request.form['firstname']
-        session['lname'] = request.form['lastname']
+        session['uname'] = request.form['username']
+        
+        #key = 
        
-        key = '1234'
         if check_password(key, request.form['password']):
             session['logged_in'] = True
             return redirect(url_for('loggedIn'))
