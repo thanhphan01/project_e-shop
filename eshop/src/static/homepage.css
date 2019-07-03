@@ -3,6 +3,10 @@ text-align:center;
 padding-bottom:2px;
 padding-top:3px;
 background-color: SteelBlue;
+width:100%;
+}
+html{
+	background-color: DimGrey;
 }
 h3{
 	text-align: center;
@@ -24,7 +28,7 @@ body{
 display:flex;
 
 }
-th, tr{ 
+th, td, tr{ 
 	width: 8%;
 	text-align:center;
 }
@@ -32,13 +36,13 @@ th, tr{
 #itemlist {color:red;
 background-color: LightSteelBlue;
 width:80%;
-
 }
 #login{background-color:SlateGray;
 color:Black;
 float: right;
 width:20%;
 text-align:center;
+
 
 }
 
