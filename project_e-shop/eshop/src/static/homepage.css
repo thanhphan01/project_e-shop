@@ -1,0 +1,64 @@
+#header{ 
+text-align:center;
+padding-bottom:2px;
+padding-top:3px;
+background-color: SteelBlue;
+width:100%;
+font-family: Arial, Helvetica, sans-serif;
+border-style:solid;
+border-width:4px;
+}
+h1{
+	font-size:60px;
+}
+h2{
+	font-style: italic;
+	font-size:20px;
+}
+p{
+	font-style:bold;
+	font-size:25px;
+}
+html{
+	background-color: DimGrey;
+}
+h3{
+	text-align: center;
+}
+hr{
+  background-color:#FF0000;
+  color:#FF0000;
+  border:#FF0000;
+  height:1px;
+}
+#image{align-items:center;
+justify-content:center;
+}
+#block{
+display:flex;
+
+}
+th, td, tr{ 
+	width: 8%;
+	text-align:center;
+}
+
+#itemlist {color:red;
+background-color: white;
+width:80%;
+color:black;
+border-style:solid;
+border-width:2px;
+}
+#login{background-color:LightCyan;
+color:Black;
+float: right;
+width:20%;
+text-align:center;
+border-style:solid;
+border-width:2px;
+
+}
+#submit{
+    float:right;
+}

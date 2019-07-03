@@ -1,0 +1,45 @@
+#header{ 
+text-align:center;
+padding-bottom:2px;
+padding-top:3px;
+background-color: SteelBlue;
+}
+h3{
+	text-align: center;
+}
+hr{
+  background-color:#FF0000;
+  color:#FF0000;
+  border:#FF0000;
+  height:1px;
+}
+
+#image{align-items:center;
+justify-content:center;
+}
+body{
+
+}
+#block{
+display:flex;
+
+}
+th, tr{ 
+	width: 8%;
+	text-align:center;
+}
+
+#itemlist {color:red;
+background-color: LightSteelBlue;
+width:80%;
+
+}
+#login{background-color:SlateGray;
+color:Black;
+float: right;
+width:20%;
+text-align:center;
+
+}
+
+
