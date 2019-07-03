@@ -22,7 +22,6 @@ def product_list():
     cursor = mysql.connection.cursor()
     cursor.execute("SELECT picture, name, price, stock FROM products")
     rv = cursor.fetchall()
-    #rv[0] = b64encode(rv[0])
     return rv
 @app.route('/', methods=['GET', 'POST'])                                        #Login/Home
 def login():

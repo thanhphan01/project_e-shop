@@ -17,13 +17,13 @@
 					<th> Name </th>
 					<th> Price </th>
 					<th> Stock </th>
-					<th> Quantity <br>(1-10) </th>
+					<th> Quantity </th>
 				</thead>
 					<tbody>
                     {% for row in rv %}
 						<tr>
                             <td>
-                                <!--img src = "data:image/jpg;base 64,row.0"-->
+                                <img src = "static/{{row.0}}"
                             </td>
                             <td>
                                 {{ row.1 }}
@@ -35,7 +35,7 @@
                                 {{ row.3}}
                             </td>
                             <td>
-								<input type="number" name="quantity" min="1" max="10">
+								<input type="number" name="quantity" min="1" max="{{row.3}}">
 							</td>
                         </tr> 
                         {% endfor %}
