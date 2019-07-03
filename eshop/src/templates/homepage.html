@@ -13,44 +13,28 @@
 		<form>
 			<table>
 				<thead>
-					<div id="image">
-						<th> Image </th>
-					</div>
+                    <th> Image </th>
 					<th> Name </th>
 					<th> Price </th>
 					<th> Stock </th>
 				</thead>
 				<tbody>
+                    {% for row in rv %}
 					<tr>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-						<td> </td>
+						<td>
+                            <!--img src = "data:image/jpg;base 64,row.0"-->
+                        </td>
+						<td>
+                            {{ row.1 }}
+                        </td>
+                        <td>
+                            {{ row.2 }}
+                        </td>
+						<td>
+                            {{ row.3}}
+                        </td>
 					</tr>
-					<tr>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-					</tr>
-					<tr>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-					</tr>
-					<tr>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-					</tr>
-					<tr>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-						<td> </td>
-					</tr>
+                    {% endfor %}
 				</tbody>
 			</table>
 		</form>

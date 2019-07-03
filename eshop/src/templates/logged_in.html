@@ -1,6 +1,6 @@
 <head>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="homepage.css" type="text/css"/>
+	<link rel="stylesheet" href="/static/homepage.css" type="text/css"/>
 	<title> Useful Things </title>
 </head>
 <body>
@@ -20,50 +20,25 @@
 					<th> Quantity <br>(1-10) </th>
 				</thead>
 					<tbody>
+                    {% for row in rv %}
 						<tr>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td>
+                            <td>
+                                <!--img src = "data:image/jpg;base 64,row.0"-->
+                            </td>
+                            <td>
+                                {{ row.1 }}
+                            </td>
+                            <td>
+                                {{ row.2 }}
+                            </td>
+                            <td>
+                                {{ row.3}}
+                            </td>
+                            <td>
 								<input type="number" name="quantity" min="1" max="10">
 							</td>
-						</tr>
-						<tr>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td>
-								<input type="number" name="quantity" min="1" max="10">
-							</td> 
-						</tr>
-						<tr>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td>
-								<input type="number" name="quantity" min="1" max="10">
-							</td>
-						</tr>
-						<tr>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td>
-								<input type="number" name="quantity" min="1" max="10">
-							</td>
-						</tr>
-						<tr>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td> </td>
-							<td>
-								<input type="number" name="quantity" min="1" max="10">
-							</td>
+                        </tr> 
+                        {% endfor %}
 					</tbody>
 			</table>
 			<div id="submit">
@@ -79,12 +54,12 @@
 				</a>
 			</div>
             <div>
-				<a href="irgendein_Link">
+				<a href="/shopping_cart">
 					<input type="button" value ="Shopping Cart">
                 </a>
             </div>
             <div>
-				<a href="irgendein_Link">
+				<a href="/">
                     <input type="button" value ="Log Out">
                 </a>
             </div>    
