@@ -1,7 +1,6 @@
 <head>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet"
-	href="homepage.css"/>
+	<link rel="stylesheet" href="homepage.css" type="text/css"/>
 	<title> Useful Things </title>
 </head>
 <body>
@@ -56,33 +55,20 @@
 			</table>
 		</form>
 		</div>
-		<div id="login">
+        <div id="login">
 			<p> Login </p>
-			<table>
-				<tbody>
-					<form>
-						<tr>
-							<td>
-							<label> Username </label>
-							</td>
-							<td>
-							<input type ="text">
-							</td>
-						</tr>
-						<tr>
-							<td>
-							<label> Password </label>
-							</td>
-							<td>
-							<input type ="text">
-							</td>
-						</tr>	
-					</form>
-				</tbody>
-			</table>
-			<p>
-			<input type="button" value ="Log in">
-			</p>
-		</div>
-	</div>
+                <form method="POST" action="">
+					<div class="formline" >
+						<label>Username</label>
+						<input type="text" name="username" />
+					</div>
+                    <div>
+                           <label>Passwort</label>
+                           <input type="password" name="password"/> 
+                    </div> 
+                    <br>
+					<input type="submit" name="eingabe" value="Log in" />
+				</form>
+        </div>
+    </div>
 </body>
